@@ -60,21 +60,21 @@ function drawBricks() {
 
 function keyDownHandler(e) {
   if (e.keyCode == 39) {
-      rightPressed = true;
-  }
-  else if(e.keyCode == 37) {
-    leftPressed = true;
-  }
-}
+     rightPressed = true;
+       }
+         else if(e.keyCode == 37) {
+            leftPressed = true;
+              }
+                }
 
 function keyUpHandler(e) {
   if (e.keyCode == 39) {
-    rightPressed = false;
-  }
+    rightPressed = false; 
+      }
   else if(e.keyCode == 37) {
     leftPressed = false;
-  }
-}
+      }
+        }
 
 function drawball(){
     ctx.beginPath();
@@ -169,7 +169,7 @@ function draw() {
                 alert("GAME OVER, PLEASE TRY AGAIN");
                   document.location.reload(); } 
                   
-                else {
+            else {
             x = (canvas.width/2)+Math.floor(Math.random()*21)-10;
             y = (canvas.height-30)+Math.floor(Math.random()*21)-10;
             paddleX = (canvas.width-paddleWidth)/2;
@@ -203,7 +203,7 @@ function mouseMoveHandler(e) {
     if (relativeX > 0+paddleWidth/2 && relativeX < canvas.width-paddleWidth/2) {
       paddleX = relativeX - paddleWidth/2;
       }
-    }
+        }
 
 draw();
 
